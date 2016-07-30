@@ -1,0 +1,95 @@
+.container {
+    /*Блочная модель*/
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header {
+    margin-bottom: 60px;
+}
+
+.main-header .main-navigation {
+    /*Блочная модель*/
+    width: 780px;
+    float: left;
+}
+
+.main-header .user-block {
+    /*Блочная модель*/
+    width: 140px;
+    float: right;
+}
+
+main .index-logo {
+    /*Блочная модель*/
+    width: 368px;
+    height: 204px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+main .features {
+    margin-bottom: 80px;
+}
+
+main .features-item {
+    /*Блочная модель*/
+    width: 300px;
+    margin-right: 20px;
+    float: left;
+}
+
+main .features-item:last-child {
+    margin-right: 0;
+}
+
+main .index-content {
+    /*Блочная модель*/
+    padding: 50px 80px;
+    margin-bottom: 35px;
+}
+
+main .index-content-left {
+    /*Блочная модель*/
+    width: 380px;
+    float: left;
+}
+
+main .index-content-right {
+    /*Блочная модель*/
+    width: 300px;
+    float: right;
+}
+
+.main-footer {
+    /*Блочная модель*/
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+}
+
+.main-footer .footer-contacts {
+    /*Блочная модель*/
+    width: 320px;
+    float: left;
+    margin-right: 60px;
+}
+
+.main-footer .footer-social {
+    /*Блочная модель*/
+    width: 180px;
+    float: left;
+}
+
+.main-footer .footer-copyright {
+    /*Блочная модель*/
+    width: 180px;
+    float: right;
+}
