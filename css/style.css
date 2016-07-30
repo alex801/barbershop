@@ -83,6 +83,7 @@ main .item-content-right {
   /*Блочная модель*/
   width: 400px;
   float: right;
+  padding-top: 25px;
 }
 
 .main-footer {
