@@ -27,7 +27,7 @@
     float: right;
 }
 
-.main .breadcrumbs {
+main .breadcrumbs {
   /*Блочная модель*/
   margin-bottom: 50px;
 }
@@ -71,6 +71,18 @@ main .index-content-right {
     /*Блочная модель*/
     width: 300px;
     float: right;
+}
+
+main .item-content-left {
+  /*Блочная модель*/
+  width: 480px;
+  float: left;
+}
+
+main .item-content-right {
+  /*Блочная модель*/
+  width: 400px;
+  float: right;
 }
 
 .main-footer {
