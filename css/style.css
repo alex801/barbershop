@@ -1,5 +1,4 @@
 .container {
-    /*Блочная модель*/
     width: 940px;
     padding: 0 10px;
     margin: 0 auto;
@@ -38,6 +37,18 @@ main .index-logo {
     height: 204px;
     margin: 0 auto;
     margin-bottom: 25px;
+}
+
+main h1 {
+  margin-bottom: 25px;
+}
+
+main .features h2 {
+  /*Блочная модель*/
+  margin-bottom: 60px;
+
+  /*Типографика*/
+  text-align: center;
 }
 
 main .features {
