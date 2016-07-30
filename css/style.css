@@ -27,6 +27,11 @@
     float: right;
 }
 
+.main .breadcrumbs {
+  /*Блочная модель*/
+  margin-bottom: 50px;
+}
+
 main .index-logo {
     /*Блочная модель*/
     width: 368px;
