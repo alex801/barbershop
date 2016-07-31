@@ -26,12 +26,12 @@
     float: right;
 }
 
-main .breadcrumbs {
+.breadcrumbs {
   /*Блочная модель*/
   margin-bottom: 50px;
 }
 
-main .index-logo {
+.index-logo {
     /*Блочная модель*/
     width: 368px;
     height: 204px;
@@ -39,7 +39,7 @@ main .index-logo {
     margin-bottom: 25px;
 }
 
-main h1 {
+h1 {
   margin-bottom: 25px;
 }
 
@@ -51,46 +51,46 @@ main h1 {
   text-align: center;
 }
 
-main .features {
+.features {
     margin-bottom: 80px;
 }
 
-main .features-item {
+.features-item {
     /*Блочная модель*/
     width: 300px;
     margin-right: 20px;
     float: left;
 }
 
-main .features-item:last-child {
+.features-item:last-child {
     margin-right: 0;
 }
 
-main .index-content {
+.index-content {
     /*Блочная модель*/
     padding: 50px 80px;
     margin-bottom: 35px;
 }
 
-main .index-content-left {
+.index-content-left {
     /*Блочная модель*/
     width: 380px;
     float: left;
 }
 
-main .index-content-right {
+.index-content-right {
     /*Блочная модель*/
     width: 300px;
     float: right;
 }
 
-main .item-content-left {
+.item-content-left {
   /*Блочная модель*/
   width: 480px;
   float: left;
 }
 
-main .item-content-right {
+.item-content-right {
   /*Блочная модель*/
   width: 400px;
   float: right;
