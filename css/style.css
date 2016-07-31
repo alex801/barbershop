@@ -113,13 +113,13 @@ h1 {
   float: right;
 }
 
-.shop-left {
+.catalog-left {
   /*Блочная модель*/
   width: 180px;
   float: left;
 }
 
-.shop-right {
+.catalog-right {
   /*Блочная модель*/
   width: 720px;
   float: right;
