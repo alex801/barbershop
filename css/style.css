@@ -97,6 +97,16 @@ main .item-content-right {
   padding-top: 25px;
 }
 
+.services-left {
+  width: 400px;
+  float: left;
+}
+
+.services-right {
+  width: 480px;
+  float: right;
+}
+
 .main-footer {
     /*Блочная модель*/
     padding-top: 60px;
