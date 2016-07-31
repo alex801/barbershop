@@ -125,6 +125,11 @@ h1 {
   float: right;
 }
 
+.catalog-gallery {
+  margin-bottom: 45px;
+
+}
+
 .catalog-item {
   /*Блочная модель*/
   display: inline-block;
