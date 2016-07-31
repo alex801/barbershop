@@ -43,10 +43,6 @@ h1 {
   margin-bottom: 25px;
 }
 
-.services {
-  margin-bottom: 80px;
-}
-
 .services-title {
   /*Блочная модель*/
   margin-bottom: 60px;
@@ -99,6 +95,10 @@ h1 {
   width: 400px;
   float: right;
   padding-top: 25px;
+}
+
+.services {
+  padding-bottom: 80px;
 }
 
 .services-left {
