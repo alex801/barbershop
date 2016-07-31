@@ -102,12 +102,26 @@ h1 {
 }
 
 .services-left {
+  /*Блочная модель*/
   width: 400px;
   float: left;
 }
 
 .services-right {
+  /*Блочная модель*/
   width: 480px;
+  float: right;
+}
+
+.shop-left {
+  /*Блочная модель*/
+  width: 180px;
+  float: left;
+}
+
+.shop-right {
+  /*Блочная модель*/
+  width: 720px;
   float: right;
 }
 
