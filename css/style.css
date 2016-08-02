@@ -1,5 +1,11 @@
 body {
     min-width: 960px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'PT Sans Narrow', Arial sans-serif;
+    text-transform: uppercase;
 }
 
 .container {
