@@ -1,11 +1,17 @@
 body {
+    /*Блочная модель*/
     min-width: 960px;
 
+    /*Типографика*/
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     font-family: 'PT Sans Narrow', Arial sans-serif;
     text-transform: uppercase;
+
+    /*Оформление*/
+    background: url(../img/bg-content.jpg) no-repeat center top #000;
+    color: #fff;
 }
 
 .container {
@@ -20,6 +26,92 @@ body {
     clear: both;
 }
 
+.main-header {
+    margin-bottom: 60px;
+
+    color: #fff;
+
+    background-color: #000;
+}
+
+.main-navigation {
+    /*Блочная модель*/
+    width: 780px;
+    float: left;
+}
+
+.main-navigation ul {
+    /*Блочная модель*/
+    margin: 0;
+    padding: 0;
+
+    /*Типографика*/
+    list-style: none;
+    font-size: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+
+    /*Типографика*/
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main-navigation a {
+    /*Блочная модель*/
+    display: block;
+    padding: 25px 20px;
+
+    color: #fff;
+
+    text-decoration: none;
+}
+
+.main-navigation a:hover {
+    background: #242424;
+}
+
+.user-block {
+    /*Блочная модель*/
+    max-width: 140px;
+    float: right;
+}
+
+.login {
+    /*Блочная модель*/
+    position: relative;
+    display: inline-block;
+    padding: 25px 20px;
+    padding-left: 50px;
+
+    /*Типографика*/
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;
+
+    /*Оформление*/
+    color: #fff;
+    text-decoration: none;
+}
+
+.login:hover {
+    background-color: #242424;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 20px;
+
+    width: 18px;
+    height: 18px;
+
+    background: #ff0000;
+}
+
 .price-header {
     padding-bottom: 55px;
 }
@@ -30,7 +122,7 @@ body {
     float: left;
 }
 
-.main-header .user-block {
+.user-block {
     /*Блочная модель*/
     width: 140px;
     float: right;
