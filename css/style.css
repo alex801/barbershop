@@ -1,3 +1,7 @@
+body {
+    min-width: 960px;
+}
+
 .container {
     width: 940px;
     padding: 0 10px;
