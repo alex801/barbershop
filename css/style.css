@@ -103,8 +103,7 @@ body {
     width: 18px;
     height: 18px;
 
-    background: #ff0000;
-    background-position: -1px -15px;
+    background: url("../img/icons.png") no-repeat;
     opacity: 0.3;
 }
 
@@ -410,31 +409,102 @@ h1 {
 }
 
 .main-footer {
-    /*Блочная модель*/
     padding-top: 60px;
     padding-bottom: 40px;
     margin-top: 60px;
+
+    color: #fff;
+    background: url("../img/footer-bg-pattern.jpg") #252525;
 }
 
 .price-footer {
   margin-top: 0;
 }
 
-.main-footer .footer-contacts {
-    /*Блочная модель*/
+.footer-contacts {
     width: 320px;
     float: left;
     margin-right: 60px;
 }
 
-.main-footer .footer-social {
-    /*Блочная модель*/
-    width: 180px;
-    float: left;
+.footer-contacts a {
+    color: #fff;
 }
 
-.main-footer .footer-copyright {
-    /*Блочная модель*/
+.footer-contacts a:hover {
+    text-decoration: none;
+}
+
+.footer-social {
     width: 180px;
+    float: left;
+
+    text-align: center;
+}
+
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+
+    background: url("../img/icons.png") no-repeat #000;
+}
+
+.social-btn:hover {
+    background-color: #fff;
+}
+
+.social-btn-vk {
+    background-position: 9px -23px;
+}
+
+.social-btn-vk:hover {
+    background-position: 9px -60px;
+}
+
+.social-btn-fb {
+    background-position: 15px -98px;
+}
+
+.social-btn-fb:hover {
+    background-position: 15px -140px;
+}
+
+.social-btn-inst {
+    background-position: 12px -182px;
+}
+
+.social-btn-inst:hover {
+    background-position: 12px -223px;
+}
+
+.footer-copyright {
+    max-width: 180px;
     float: right;
+}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.footer-copyright .btn {
+    margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+    background-color: #fff;
+    color: #000;
 }
