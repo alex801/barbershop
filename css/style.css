@@ -35,17 +35,14 @@ body {
 }
 
 .main-navigation {
-    /*Блочная модель*/
     width: 780px;
     float: left;
 }
 
 .main-navigation ul {
-    /*Блочная модель*/
     margin: 0;
     padding: 0;
 
-    /*Типографика*/
     list-style: none;
     font-size: 0;
 }
@@ -53,14 +50,12 @@ body {
 .main-navigation li {
     display: inline-block;
 
-    /*Типографика*/
     vertical-align: top;
     font-size: 16px;
     line-height: 20px;
 }
 
 .main-navigation a {
-    /*Блочная модель*/
     display: block;
     padding: 25px 20px;
 
@@ -74,7 +69,6 @@ body {
 }
 
 .user-block {
-    /*Блочная модель*/
     max-width: 140px;
     float: right;
 }
@@ -110,35 +104,32 @@ body {
     height: 18px;
 
     background: #ff0000;
+    background-position: -1px -15px;
+    opacity: 0.3;
+}
+
+.login:hover::before {
+    opacity: 1;
+}
+
+.index-logo {
+    width: 368;
+    height: 204;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.index-logo img {
+    width: 368px;
+    height: 204;
 }
 
 .price-header {
     padding-bottom: 55px;
 }
 
-.main-header .main-navigation {
-    /*Блочная модель*/
-    width: 780px;
-    float: left;
-}
-
-.user-block {
-    /*Блочная модель*/
-    width: 140px;
-    float: right;
-}
-
 .breadcrumbs {
-  /*Блочная модель*/
   margin-bottom: 50px;
-}
-
-.index-logo {
-    /*Блочная модель*/
-    width: 368px;
-    height: 204px;
-    margin: 0 auto;
-    margin-bottom: 25px;
 }
 
 h1 {
@@ -146,10 +137,8 @@ h1 {
 }
 
 .services-title {
-  /*Блочная модель*/
   margin-bottom: 60px;
 
-  /*Типографика*/
   text-align: center;
 }
 
@@ -158,20 +147,54 @@ h1 {
 }
 
 .features-item {
-    /*Блочная модель*/
     width: 300px;
     margin-right: 20px;
     float: left;
+
+    text-align: center;
 }
 
 .features-item:last-child {
     margin-right: 0;
 }
 
+.features-name {
+    position: relative;
+
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.features-item p {
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.features-name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
 .index-content {
-    /*Блочная модель*/
     padding: 50px 80px;
     margin-bottom: 35px;
+
+    background: url("../img/bg-pattern.jpg") #f8f5f2;
+    color: #000;
 }
 
 .index-content-left {
