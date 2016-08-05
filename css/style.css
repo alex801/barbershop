@@ -35,17 +35,14 @@ body {
 }
 
 .main-navigation {
-    /*Блочная модель*/
     width: 780px;
     float: left;
 }
 
 .main-navigation ul {
-    /*Блочная модель*/
     margin: 0;
     padding: 0;
 
-    /*Типографика*/
     list-style: none;
     font-size: 0;
 }
@@ -53,14 +50,12 @@ body {
 .main-navigation li {
     display: inline-block;
 
-    /*Типографика*/
     vertical-align: top;
     font-size: 16px;
     line-height: 20px;
 }
 
 .main-navigation a {
-    /*Блочная модель*/
     display: block;
     padding: 25px 20px;
 
@@ -74,7 +69,6 @@ body {
 }
 
 .user-block {
-    /*Блочная модель*/
     max-width: 140px;
     float: right;
 }
@@ -109,36 +103,32 @@ body {
     width: 18px;
     height: 18px;
 
-    background: #ff0000;
+    background: url("../img/icons.png") no-repeat;
+    opacity: 0.3;
+}
+
+.login:hover::before {
+    opacity: 1;
+}
+
+.index-logo {
+    width: 368;
+    height: 204;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.index-logo img {
+    width: 368px;
+    height: 204;
 }
 
 .price-header {
     padding-bottom: 55px;
 }
 
-.main-header .main-navigation {
-    /*Блочная модель*/
-    width: 780px;
-    float: left;
-}
-
-.user-block {
-    /*Блочная модель*/
-    width: 140px;
-    float: right;
-}
-
 .breadcrumbs {
-  /*Блочная модель*/
   margin-bottom: 50px;
-}
-
-.index-logo {
-    /*Блочная модель*/
-    width: 368px;
-    height: 204px;
-    margin: 0 auto;
-    margin-bottom: 25px;
 }
 
 h1 {
@@ -146,10 +136,8 @@ h1 {
 }
 
 .services-title {
-  /*Блочная модель*/
   margin-bottom: 60px;
 
-  /*Типографика*/
   text-align: center;
 }
 
@@ -158,32 +146,207 @@ h1 {
 }
 
 .features-item {
-    /*Блочная модель*/
     width: 300px;
     margin-right: 20px;
     float: left;
+
+    text-align: center;
 }
 
 .features-item:last-child {
     margin-right: 0;
 }
 
+.features-name {
+    position: relative;
+
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.features-item p {
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.features-name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
 .index-content {
-    /*Блочная модель*/
     padding: 50px 80px;
     margin-bottom: 35px;
+
+    background:
+        url("../img/block-divider.png") no-repeat center,
+        url("../img/bg-pattern.jpg") #f8f5f2;
+    color: #000;
 }
 
 .index-content-left {
-    /*Блочная модель*/
     width: 380px;
     float: left;
 }
 
 .index-content-right {
-    /*Блочная модель*/
     width: 300px;
     float: right;
+}
+
+.index-content-title {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-content p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.news-preview {
+    margin: 0;
+    padding: 0;
+    padding-right: 35px;
+
+    list-style: none;
+}
+
+.news-preview li {
+    margin-bottom: 25px;
+}
+
+.news-preview p {
+    margin-bottom: 0;
+}
+
+.news-preview time {
+    text-transform: none;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 33px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    vertical-align: top;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+    background-color: #000;
+}
+
+.gallery {
+    position: relative;
+
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+
+    background-color: #ccc;
+    border: 7px solid #fff;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-prev {
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
+}
+
+.appointment-form input {
+    float: left;
+    width: 106px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 7px 15px;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    color: #000;
+    text-transform: uppercase;
+
+    background-color: #f9f6f3;
+    border: 2px solid #000;
+    outline: none;
+}
+
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form input:focus {
+    border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
 }
 
 .item-content-left {
@@ -246,31 +409,102 @@ h1 {
 }
 
 .main-footer {
-    /*Блочная модель*/
     padding-top: 60px;
     padding-bottom: 40px;
     margin-top: 60px;
+
+    color: #fff;
+    background: url("../img/footer-bg-pattern.jpg") #252525;
 }
 
 .price-footer {
   margin-top: 0;
 }
 
-.main-footer .footer-contacts {
-    /*Блочная модель*/
+.footer-contacts {
     width: 320px;
     float: left;
     margin-right: 60px;
 }
 
-.main-footer .footer-social {
-    /*Блочная модель*/
-    width: 180px;
-    float: left;
+.footer-contacts a {
+    color: #fff;
 }
 
-.main-footer .footer-copyright {
-    /*Блочная модель*/
+.footer-contacts a:hover {
+    text-decoration: none;
+}
+
+.footer-social {
     width: 180px;
+    float: left;
+
+    text-align: center;
+}
+
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+
+    background: url("../img/icons.png") no-repeat #000;
+}
+
+.social-btn:hover {
+    background-color: #fff;
+}
+
+.social-btn-vk {
+    background-position: 9px -23px;
+}
+
+.social-btn-vk:hover {
+    background-position: 9px -60px;
+}
+
+.social-btn-fb {
+    background-position: 15px -98px;
+}
+
+.social-btn-fb:hover {
+    background-position: 15px -140px;
+}
+
+.social-btn-inst {
+    background-position: 12px -182px;
+}
+
+.social-btn-inst:hover {
+    background-position: 12px -223px;
+}
+
+.footer-copyright {
+    max-width: 180px;
     float: right;
+}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.footer-copyright .btn {
+    margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+    background-color: #fff;
+    color: #000;
 }
