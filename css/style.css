@@ -315,6 +315,41 @@ h1 {
     right: 0;
 }
 
+.appointment-form input {
+    float: left;
+    width: 106px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 7px 15px;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    color: #000;
+    text-transform: uppercase;
+
+    background-color: #f9f6f3;
+    border: 2px solid #000;
+    outline: none;
+}
+
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form input:focus {
+    border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
+}
+
 .item-content-left {
   /*Блочная модель*/
   width: 480px;
