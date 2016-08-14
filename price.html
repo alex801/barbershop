@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>Прайс-лист</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
-    <header class="main-header price-header">
+  <body class="inner-page">
+    <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
+          <a class="logo-inner" href="index.html"><img src="img/logo-inner.png" width="111" height="24" alt="Главная" title="Главная"></a>
           <ul>
-            <li>
-              <a href="index.html"><img class="page-logo" src="img/page-logo.png" width="111" height="24" alt="Главная" title="Главная"></a>
-            </li>
             <li>
               <a href="#">Информация</a>
             </li>
             <li>
               <a href="#">Новости</a>
             </li>
-            <li>
-              <a href="price.html">Прайс-лист</a>
+            <li class="active">
+              <span>Прайс-лист</span>
             </li>
             <li>
               <a href="shop.html">Магазин</a>
@@ -35,33 +35,33 @@
         </div>
       </div>
     </header>
-    <main class="container">
-      <h1>Прайс-лист</h1>
-      <div class="breadcrumbs">
-        <a href="#">Главная</a>
-        <span>Прайс-лист</span>
+    <main class="container ">
+      <div class="inner-page-title">
+        <h1>Прайс-лист</h1>
+        <ul class="breadcrumbs">
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li class="current">Прайс-лист</li>
+        </ul>
       </div>
-      <div class="services clearfix">
-        <h2 class="services-title">Истинно мужская классика</h2>
-        <div class="services-left">
-          <section class="service-item">
-            <h3>Мы&nbsp;используем только лучшие средства:</h3>
-            <ul>
+      <div class="inner-content">
+        <div class="big-heading">
+          <h2>Истинно мужская классика</h2>
+        </div>
+        <div class="inner-columns clearfix">
+          <div class="inner-column-left">
+            <h2>Мы&nbsp;используем только<br>лучшие средства:</h2>
+            <ul class="custom-list-1">
               <li>Baxter of California</li>
               <li>Mr Natty</li>
               <li>Suavecito</li>
               <li>Malin+Goetz+</li>
             </ul>
-          </section>
-          <section class="service-item">
-            <h3>Несколько слов о&nbsp;нас:</h3>
-            <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас&nbsp;&mdash; это уникальная и&nbsp;продуманная до&nbsp;мелочей работа. Мы&nbsp;не&nbsp;работаем на&nbsp;количество, мы&nbsp;делаем качество.</p>
-          </section>
-        </div>
-        <div class="services-right">
-          <section class="service-item">
-            <h3>Цены на&nbsp;услуги наших мастеров:</h3>
-            <table>
+          </div>
+          <div class="inner-column-right">
+            <h2>Цены на&nbsp;услуги<br>наших мастеров:</h2>
+            <table class="prices-table">
               <tr>
                 <td>Стрижка</td>
                 <td>1500 р.</td>
@@ -75,10 +75,16 @@
                 <td>350 р.</td>
               </tr>
             </table>
-          </section>
-          <section class="services-item">
-            <p>Наша мастерская расположена в&nbsp;центре города, поэтому сделать стильную стрижку можно в&nbsp;любое время, даже в&nbsp;обеденный перерыв. Здесь вы&nbsp;можете погрузиться в&nbsp;удобную для вас атмосферу, чувствовать себя комфортно и&nbsp;свободно!</p>
-          </section>
+          </div>
+        </div>
+        <div class="inner-columns clearfix">
+          <h2>Несколько слов о&nbsp;нас:</h2>
+          <div class="inner-column-left">
+            <p class="short-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас&nbsp;&mdash; это уникальная и&nbsp;продуманная до&nbsp;мелочей работа. Мы&nbsp;не&nbsp;работаем на&nbsp;количество, мы&nbsp;делаем качество.</p>
+          </div>
+          <div class="inner-column-right">
+            <p class="short-text">Наша мастерская расположена в&nbsp;центре города, поэтому сделать стильную стрижку можно в&nbsp;любое время, даже в&nbsp;обеденный перерыв. Здесь вы&nbsp;можете погрузиться в&nbsp;удобную для вас атмосферу, чувствовать себя комфортно и&nbsp;свободно!</p>
+          </div>
         </div>
       </div>
     </main>
