@@ -1,15 +1,12 @@
 body {
-    /*Блочная модель*/
     min-width: 960px;
 
-    /*Типографика*/
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     font-family: 'PT Sans Narrow', Arial sans-serif;
     text-transform: uppercase;
 
-    /*Оформление*/
     background: url(../img/bg-content.jpg) no-repeat center top #000;
     color: #fff;
 }
