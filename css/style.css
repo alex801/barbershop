@@ -1,17 +1,20 @@
 body {
-    /*Блочная модель*/
     min-width: 960px;
 
-    /*Типографика*/
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     font-family: 'PT Sans Narrow', Arial sans-serif;
     text-transform: uppercase;
 
-    /*Оформление*/
     background: url(../img/bg-content.jpg) no-repeat center top #000;
     color: #fff;
+}
+
+.inner-page {
+  color: #000000;
+
+  background: #f8f3f0 url("../img/bg-pattern.jpg") repeat;
 }
 
 .container {
@@ -32,6 +35,10 @@ body {
     color: #fff;
 
     background-color: #000;
+}
+
+.inner-page .main-header {
+  margin-bottom: 55px;
 }
 
 .main-navigation {
@@ -66,6 +73,49 @@ body {
 
 .main-navigation a:hover {
     background: #242424;
+}
+
+.main-navigation .logo-inner {
+  float: left;
+  width: 111px;
+  height: 20px;
+  padding-top: 22px;
+}
+
+.main-navigation .logo-inner:hover {
+  background: none;
+}
+
+.main-navigation .logo-inner img {
+  width: 111px;
+  height: 24px;
+}
+
+.main-navigation .active {
+  position: relative;
+
+  background-color: none;
+}
+
+.main-navigation .active a:hover {
+  background: none;
+}
+
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+
+  height: 5px;
+
+  background-color: #ffffff;
+}
+
+.main-navigation .active span {
+  display: block;
+  padding: 25px 20px;
 }
 
 .user-block {
@@ -121,14 +171,6 @@ body {
 .index-logo img {
     width: 368px;
     height: 204px;
-}
-
-.price-header {
-    padding-bottom: 55px;
-}
-
-.breadcrumbs {
-  margin-bottom: 50px;
 }
 
 h1 {
@@ -349,63 +391,204 @@ h1 {
     width: 100%;
 }
 
-.item-content-left {
-  /*Блочная модель*/
-  width: 480px;
-  float: left;
+/*Стили внутренних страниц*/
+
+.inner-page-title {
+  margin-bottom: 55px;
 }
 
-.item-content-right {
-  /*Блочная модель*/
-  width: 400px;
-  float: right;
-  padding-top: 25px;
+.inner-page-title h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 30px;
+  line-height: 42px;
 }
 
-.services {
-  padding-bottom: 80px;
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
-.services-left {
-  /*Блочная модель*/
-  width: 400px;
-  float: left;
+.breadcrumbs li {
+  position: relative;
+
+  display: inline;
+  padding-right: 40px;
 }
 
-.services-right {
-  /*Блочная модель*/
-  width: 480px;
-  float: right;
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 18px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
 }
 
-.catalog-left {
-  /*Блочная модель*/
-  width: 180px;
-  float: left;
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
 }
 
-.catalog-right {
-  /*Блочная модель*/
-  width: 720px;
-  float: right;
+.breadcrumbs a:hover {
+  text-decoration: underline;
 }
 
-.catalog-gallery {
-  margin-bottom: 45px;
+.breadcrumbs .current {
+  color: #aba9a7;
 }
 
-.catalog-item {
-  /*Блочная модель*/
+.breadcrumbs .current::after {
+  display: none;
+}
+
+/*Общие стили для контентных тегов*/
+
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-content h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.inner-content h2 + h3 {
+  margin-top: 30px;
+}
+
+.inner-content p {
+  margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+
+  border: 2px solid #000000;
+}
+
+/*Особые стили для контентных тегов */
+
+.big-heading {
+  margin-top: 55px;
+  margin-bottom: 65px;
+
+  text-align: center;
+}
+
+.big-heading h2 {
+  position: relative;
+  z-index: 2;
+
   display: inline-block;
-  width: 220px;
-  margin-right: 20px;
+  margin: 0;
+  padding: 0 25px;
 
-  /*Типографика*/
   vertical-align: top;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+
+  background: #f8f3f0 url("../img/bg-pattern.jpg") repeat;
 }
 
-.catalog-item:nth-child(3n) {
-  margin-right: 0;
+.big-heading::after {
+  content: "";
+  position: relative;
+  top: -25px;
+  z-index: 1;
+
+  display: block;
+
+  border-bottom: 2px solid #000000;
+}
+
+.custome-list-1 {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.prices-table {
+  width: 100%;
+}
+
+.prices-table td {
+  width: 50%;
+}
+
+.prices-table td:last-child {
+  text-align: center;
+}
+
+/* Колонки для контента */
+
+.inner-columns {
+  margin: 60px 0;
+}
+
+.inner-column-left,
+.inner-column-right {
+  width: 460px;
+}
+
+.inner-column-left {
+  float: left;
+}
+
+.inner-column-right {
+  float: right;
+}
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+  margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+  margin-bottom: 0;
+}
+
+.short-text {
+  padding-right: 80px;
 }
 
 .main-footer {
@@ -507,4 +690,113 @@ h1 {
 .footer-copyright .btn:hover {
     background-color: #fff;
     color: #000;
+}
+
+/* Всплывающая форма */
+
+.modal-content {
+  position: fixed;
+  top: 120px;
+  left: 50%;
+
+  width: 300px;
+  padding: 50px 80px;
+
+  color: #000000;
+  background: #f8f3f0 url("../img/bg-pattern.jpg");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+  transform: translate(-50%);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.modal-content .login-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 236px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  padding-right: 40px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-form input.icon-user {
+
+}
+
+.login-form input.icon-password {
+
+}
+
+.login-form .restore {
+  float: right;
+
+  color: #000000;
 }
