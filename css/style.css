@@ -800,3 +800,56 @@ h1 {
 
   color: #000000;
 }
+
+.login-form .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.login-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.login-checkbox {
+  position: relative;
+
+  padding-left: 30px;
+
+  cursor: pointer;
+}
+
+.login-checkbox:hover {
+  color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+
+  width: 15px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
