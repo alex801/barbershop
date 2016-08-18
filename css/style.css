@@ -710,6 +710,19 @@ h1 {
   transform: translate(-50%);
 }
 
+.modal-content-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  width: 766px;
+  height: 561px;
+
+  background: #e9e5dc;
+
+  transform: translate(-50%, -50%);
+}
+
 .modal-content-close {
   position: absolute;
   top: 0;
