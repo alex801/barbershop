@@ -699,6 +699,7 @@ h1 {
   top: 120px;
   left: 50%;
 
+  display: none;
   width: 300px;
   padding: 50px 80px;
 
