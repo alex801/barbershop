@@ -711,6 +711,10 @@ h1 {
   transform: translate(-50%);
 }
 
+.modal-content-show {
+  display: block;
+}
+
 .modal-content-map {
   position: fixed;
   top: 50%;

@@ -1,0 +1,39 @@
+header,
+footer {
+  background: #D5BAE4;
+  text-align:center;
+  padding:7px;
+  background-color: #CCC;
+}
+
+container {
+  width: 90%;
+  margin:5%;
+}
+
+.col1 {
+  background: #C7E3E4;
+  float: left;
+  width: 100px;
+  margin: 10px 0px 10px 0px;
+  text-align:center;
+  padding:7px;
+  background-color:#9CF;
+}
+
+.col2 {
+  background: #E0D2C7;
+  margin: 10px 150px 10px 150px;
+  text-align:center;
+  padding:7px;
+}
+
+.col3 {
+  background: #ECD5DE;
+  width: 100px;
+  float: right;
+  margin: 10px 0px 10px 0px;
+  text-align:center;
+  padding:7px;
+  background-color:#9CF;
+}
