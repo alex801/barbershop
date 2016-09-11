@@ -703,12 +703,11 @@ h1 {
   display: none;
   width: 300px;
   padding: 50px 80px;
+  margin-left: -230px;
 
   color: #000000;
   background: #f8f3f0 url("../img/bg-pattern.jpg");
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-
-  transform: translate(-50%);
 }
 
 .modal-content-show {
@@ -900,19 +899,19 @@ h1 {
 
 @keyframes bounce {
   0% {
-    transform: translate(-50%, -2000px);
+    transform: translateY(-2000px);
   }
 
   70% {
-    transform: translate(-50%, 30px);
+    transform: translateY(30px);
   }
 
   90% {
-    transform: translate(-50%, -10px);
+    transform: translateY(-10px);
   }
 
   100% {
-    transform: translate(-50%, 0);
+    transform: translateY(0);
   }
 }
 
