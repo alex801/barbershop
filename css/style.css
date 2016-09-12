@@ -737,6 +737,10 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+.modal-content-map-show {
+    display: block;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
