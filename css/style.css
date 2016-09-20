@@ -662,6 +662,27 @@ h1 {
   margin-bottom: 0;
 }
 
+.catalog-paginator {
+  margin-top: 25px;
+  margin-bottom: -15px;
+}
+
+.catalog-paginator .btn {
+  padding: 12px 19px;
+
+  font-size: 14px;
+}
+
+.catalog-paginator .btn:hover,
+.catalog-paginator .active-page {
+  color: #000;
+  background: #fff;
+}
+
+.catalog-paginator .active-page {
+  cursor: auto;
+}
+
 .selector-marker input[type="checkbox"],
 .selector-marker input[type="radio"] {
   display: none;
