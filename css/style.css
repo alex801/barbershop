@@ -561,10 +561,82 @@ h1 {
 .catalog-selector {
   float: left;
   width: 220px;
+  margin-right: 20px;
 }
 
 .catalog-gallery {
-  float: right;
+  float: left;
+  width: 700px;
+
+  font-size: 0;
+}
+
+.catalog-gallery .gallery-item {
+  display: inline-block;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.catalog-gallery .gallery-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-gallery .item-description {
+  padding: 16px;
+}
+
+.gallery-item img {
+  display: block;
+}
+
+.gallery-item h1 {
+  margin: 0;
+  margin-bottom: 17px;
+
+  font-size: 14px;
+}
+
+.gallery-item h1 a {
+  display: block;
+
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-item .item-group {
+  display: block;
+
+  text-transform: none;
+}
+
+.gallery-item .item-buy {
+  font-size: 0;
+}
+
+.gallery-item .buy-price {
+  display: inline-block;
+  width: 109px;
+  height: 44px;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 44px;
+  font-size: 14px;
+
+  background: #e5e5e5;
+}
+
+.item-buy .btn {
+  padding-left: 18px;
+  padding-right: 18px;
+  margin: 0;
+
+  font-size: 14px;
 }
 
 .catalog-selector legend {
