@@ -567,8 +567,27 @@ h1 {
   float: right;
 }
 
+.catalog-selector legend {
+  margin-bottom: 32px;
+
+  font-size: 24px;
+}
+
+.catalog-selector fieldset {
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0;
+
+  border: none;
+}
+
 .catalog-selector label {
   display: block;
+  margin-bottom: 23px;
+}
+
+.catalog-selector label:last-child {
+  margin-bottom: 0;
 }
 
 /* Колонки для контента */
