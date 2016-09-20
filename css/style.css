@@ -558,6 +558,19 @@ h1 {
   text-align: center;
 }
 
+.catalog-selector {
+  float: left;
+  width: 220px;
+}
+
+.catalog-gallery {
+  float: right;
+}
+
+.catalog-selector label {
+  display: block;
+}
+
 /* Колонки для контента */
 
 .inner-columns {
