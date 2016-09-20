@@ -590,6 +590,60 @@ h1 {
   margin-bottom: 0;
 }
 
+.selector-marker input[type="checkbox"],
+.selector-marker input[type="radio"] {
+  display: none;
+}
+
+.selector-marker {
+  position: relative;
+
+  padding-left: 30px;
+
+  cursor: pointer;
+}
+
+.selector-marker:hover {
+  color: #663d15;
+}
+
+.selector-marker input[type="checkbox"] + .marker-indicator,
+.selector-marker input[type="radio"] + .marker-indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000000;
+}
+
+.selector-marker input[type="checkbox"]:checked + .marker-indicator::before,
+.selector-marker input[type="checkbox"]:checked + .marker-indicator::after,
+.selector-marker input[type="radio"]:checked + .marker-indicator::before,
+.selector-marker input[type="radio"]:checked + .marker-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+
+  width: 15px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.selector-marker input[type="checkbox"]:checked + .marker-indicator::before,
+.selector-marker input[type="radio"]:checked + .marker-indicator::before {
+  transform: rotate(45deg);
+}
+
+.selector-marker input[type="checkbox"]:checked + .marker-indicator::after,
+.selector-marker input[type="radio"]:checked + .marker-indicator::after {
+  transform: rotate(-45deg);
+}
+
 /* Колонки для контента */
 
 .inner-columns {
