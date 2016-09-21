@@ -8,10 +8,12 @@ var storage = localStorage.getItem('login');
 var mapButton = document.querySelector('.map');
 var map = document.querySelector('.modal-content-map');
 var mapClose = map.querySelector('.modal-content-close');
+var overlay = document.querySelector('.modal-overlay');
 
 link.addEventListener('click', function(event) {
   event.preventDefault();
   popup.classList.add('modal-content-show');
+  overlay.classList.add('modal-overlay-show');
 
   if (storage) {
     login.value = storage;
@@ -24,6 +26,7 @@ link.addEventListener('click', function(event) {
 close.addEventListener('click', function(event) {
   event.preventDefault();
   popup.classList.remove('modal-content-show');
+  overlay.classList.remove('modal-overlay-show');
   popup.classList.remove('modal-error');
 });
 
@@ -40,9 +43,17 @@ window.addEventListener('keydown', function(event) {
   if (event.keyCode === 27) {
     if (popup.classList.contains('modal-content-show')) {
       popup.classList.remove('modal-content-show');
+      overlay.classList.remove('modal-overlay-show');
       popup.classList.remove('modal-error');
     }
   }
+});
+
+overlay.addEventListener('click', function(event) {
+  event.preventDefault();
+  popup.classList.remove('modal-content-show');
+  overlay.classList.remove('modal-overlay-show');
+  popup.classList.remove('modal-error');
 });
 
 mapButton.addEventListener('click', function(event) {

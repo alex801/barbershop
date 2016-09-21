@@ -891,7 +891,7 @@ h1 {
 
 .modal-content-show {
   display: block;
-
+  
   animation: bounce 0.6s;
 }
 
@@ -917,7 +917,7 @@ h1 {
 }
 
 .modal-content-map-show {
-    display: block;
+  display: block;
 }
 
 .modal-overlay {
@@ -931,6 +931,10 @@ h1 {
   height: 100%;
 
   background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay-show {
+  display: block;
 }
 
 .modal-content-close {
