@@ -526,7 +526,14 @@ h1 {
   border-bottom: 2px solid #000000;
 }
 
-.custome-list-1 {
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.custom-list-1 li {
   position: relative;
 
   margin-bottom: 15px;
@@ -618,7 +625,8 @@ h1 {
   font-size: 0;
 }
 
-.gallery-item .buy-price {
+.gallery-item .buy-price,
+.content-price .buy-price {
   display: inline-block;
   width: 109px;
   height: 44px;
@@ -631,7 +639,8 @@ h1 {
   background: #e5e5e5;
 }
 
-.item-buy .btn {
+.item-buy .btn,
+.content-price .btn {
   padding-left: 18px;
   padding-right: 18px;
   margin: 0;
@@ -737,6 +746,47 @@ h1 {
   transform: rotate(-45deg);
 }
 
+.content-photo {
+  font-size: 0;
+}
+
+.content-photo img {
+  margin-right: 20px;
+
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.content-photo img:first-child,
+.content-photo img:last-child {
+  margin-right: 0;
+}
+
+.content-vendor {
+  margin-bottom: 39px;
+}
+
+.inner-content .vendor-existence {
+  float: left;
+}
+
+.inner-content .vendor-code {
+  float: right;
+
+  color: #aeaeae;
+}
+
+.content-description {
+  margin-bottom: 41px;
+}
+
+.content-price {
+  margin-bottom: 64px;
+}
+
+.content-additional-info h2 {
+  font-size: 24px;
+}
+
 /* Колонки для контента */
 
 .inner-columns {
@@ -766,6 +816,13 @@ h1 {
   margin-bottom: 0;
 }
 
+.item-column {
+  width: 380px;
+  padding: 20px 10px;
+}
+
+
+
 .short-text {
   padding-right: 80px;
 }
@@ -777,10 +834,6 @@ h1 {
 
     color: #fff;
     background: url("../img/footer-bg-pattern.jpg") #252525;
-}
-
-.price-footer {
-  margin-top: 0;
 }
 
 .footer-contacts {
