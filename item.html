@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Набор для путешествий &laquo;Baxter of California&raquo;</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic" rel="stylesheet">
+    <script src="js/popup.js" defer></script>
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
+          <a class="logo-inner" href="index.html"><img src="img/logo-inner.png" width="111" height="24" alt="Главная" title="Главная"></a>
           <ul>
-            <li>
-              <a href="index.html"><img class="page-logo" src="img/page-logo.png" width="111" height="24" alt="Главная" title="Главная"></a>
-            </li>
             <li>
               <a href="#">Информация</a>
             </li>
@@ -36,44 +37,48 @@
       </div>
     </header>
     <main class="container">
-      <h1>Набор для путешествий &laquo;Baxter of California&raquo;</h1>
-      <div class="breadcrumbs">
-        <a href="#">Главная</a>
-        <a href="#">Магазин</a>
-        <a href="#">Средства для ухода</a>
-        <span>Набор для путешествий &laquo;Baxter of California&raquo;</span>
+      <div class="inner-page-title">
+        <h1>Набор для путешествий &laquo;Baxter of California&raquo;</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="#">Средства для ухода</a></li>
+          <li class="current">Набор для путешествий &laquo;Baxter of California&raquo;</li>
+        </ul>
       </div>
-      <div class="item-content clearfix">
-        <div class="item-content-left">
-          <section class="photo-gallery">
-            <img src="img/baxter-travel-kit.jpg" width="460" height="498" alt="Photo-1" title="Baxter of California">
-            <img src="img/baxter-travel-kit-horizontal.jpg" width="140" height="149" alt="Photo-2" title="Baxter of California">
-            <img src="img/baxter-travel-kit-bag.jpg" width="140" height="149" alt="Photo-3" title="Baxter of California">
-            <img src="img/baxter-travel-kit.jpg" width="140" height="149" alt="Photo-4" title="Baxter of California">
-          </section>
-        </div>
-        <div class="item-content-right">
-          <div class="venfor">
-            <span class="vendor-existence">Есть в наличии</span>
-            <span class="vendor-code">Артикул: dexter-ae</span>
+      <div class="inner-content">
+        <div class="inner-columns clearfix">
+          <div class="inner-column-left">
+            <section class="content-photo">
+              <img src="img/baxter-travel-kit.jpg" width="460" height="498" alt="Photo-1" title="Baxter of California">
+              <img src="img/baxter-travel-kit-horizontal.jpg" width="140" height="149" alt="Photo-2" title="Baxter of California">
+              <img src="img/baxter-travel-kit-bag.jpg" width="140" height="149" alt="Photo-3" title="Baxter of California">
+              <img src="img/baxter-travel-kit.jpg" width="140" height="149" alt="Photo-4" title="Baxter of California">
+            </section>
           </div>
-          <section class="description">
-            <p>Travel Kit&nbsp;&mdash; необходимый аксессуар во&nbsp;время любого путешествия. В&nbsp;аккуратной кожаной сумке находится все, что нужно для бритья и&nbsp;ухода за&nbsp;кожей во&nbsp;время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-          </section>
-          <section class="price">
-            <span>2 900 руб.</span>
-            <button>Купить</button>
-          </section>
-          <section class="kit">
-            <h2>В набор входят</h2>
-            <ul>
-              <li>Средство для умывания (50 мл)</li>
-              <li>Увлажняющий крем (50 мл)</li>
-              <li>Крем для бритья (50 мл)</li>
-              <li>Крем после бритья, шампунь (50 мл)</li>
-              <li>Удобная кожаная косметичка</li>
-            </ul>
-          </section>
+          <div class="inner-column-right item-column">
+            <div class="content-vendor clearfix">
+              <span class="vendor-existence">Есть в наличии</span>
+              <span class="vendor-code">Артикул: dexter-ae</span>
+            </div>
+            <section class="content-description">
+              <p>Travel Kit&nbsp;&mdash; необходимый аксессуар во&nbsp;время любого путешествия. В&nbsp;аккуратной кожаной сумке находится все, что нужно для бритья и&nbsp;ухода за&nbsp;кожей во&nbsp;время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+            </section>
+            <section class="content-price">
+              <span class="buy-price">2 900 руб.</span>
+              <button class="btn">Купить</button>
+            </section>
+            <section class="content-additional-info">
+              <h2>В набор входят</h2>
+              <ul class="custom-list-1">
+                <li>Средство для умывания (50 мл)</li>
+                <li>Увлажняющий крем (50 мл)</li>
+                <li>Крем для бритья (50 мл)</li>
+                <li>Крем после бритья, шампунь (50 мл)</li>
+                <li>Удобная кожаная косметичка</li>
+              </ul>
+            </section>
+          </div>
         </div>
       </div>
     </main>
@@ -97,5 +102,28 @@
         </section>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="close">Закрыть</button>
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите свой логин и пароль</p>
+      <form action="https://echo.htmlacademy.ru" class="login-form" method="post">
+        <input type="text" class="icon-user" name="login" placeholder="Логин">
+        <input type="password" class="icon-password" name="password" placeholder="Пароль">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+    </div>
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <div class="yandex-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616125113!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1473660163560" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="modal-overlay"></div>
   </body>
 </html>
